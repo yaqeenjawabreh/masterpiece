@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orders - Admin | mypet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="../assets/css/mypet.css" rel="stylesheet">
+</head>
+<body class="admin-body">
+<div class="admin-shell">
+  <aside class="admin-side">
+    <a class="mp-brand" href="dashboard.html"><span class="mp-logo"><svg class="paw" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><ellipse cx="6.3" cy="10.2" rx="2" ry="2.6"/><ellipse cx="10.3" cy="5.9" rx="2" ry="2.7"/><ellipse cx="15.5" cy="5.9" rx="2" ry="2.7"/><ellipse cx="19" cy="10.2" rx="2" ry="2.6"/><path d="M12.4 11c-3.2 0-6.2 3.2-6.2 6 0 2 1.6 3.100 3.300 3.100 1.200 0 1.900-.6 2.900-.6s1.700.6 2.900.6c1.700 0 3.300-1.100 3.300-3.100 0-2.800-3-6-6.200-6z"/></svg></span>mypet</a>
+    <nav class="admin-nav"><a href="dashboard.html" class=""><i class="bi bi-grid-1x2"></i>Dashboard</a><div class="nav-label">SERVICES</div><a href="products.html" class=""><i class="bi bi-bag"></i>Products</a><a href="clinics.html" class=""><i class="bi bi-heart-pulse"></i>Clinics</a><a href="daycare.html" class=""><i class="bi bi-house-door"></i>Day care</a><a href="training.html" class=""><i class="bi bi-mortarboard"></i>Training</a><a href="walking.html" class=""><i class="bi bi-person-walking"></i>Walking</a><a href="adoption.html" class=""><i class="bi bi-heart"></i>Adoption</a><a href="blog.html" class=""><i class="bi bi-file-earmark-text"></i>Blog</a><div class="nav-label">MANAGEMENT</div><a href="bookings.html" class=""><i class="bi bi-calendar-event"></i>Bookings</a><a href="orders.html" class="active"><i class="bi bi-box-seam"></i>Orders</a><a href="users.html" class=""><i class="bi bi-people"></i>Users</a><a href="schedules.html" class=""><i class="bi bi-clock"></i>Schedules</a></nav>
+    <div class="admin-foot"><div class="d-flex align-items-center gap-2 mb-3"><span class="adm-av">A</span><div><div class="small text-white">Admin</div><div style="font-size:.68rem">admin@mypet.com</div></div></div>
+      <a href="admin-login.html" class="logout"><i class="bi bi-box-arrow-right"></i>Log out</a></div>
+  </aside>
+  <div class="admin-main">
+    <header class="admin-top">
+      <button class="btn btn-outline-secondary btn-sm d-lg-none" id="adminSideToggle" aria-label="Menu"><i class="bi bi-list"></i></button>
+      <label class="admin-search"><i class="bi bi-search"></i><input type="search" placeholder="Search users, bookings, products..."></label>
+      <div class="ms-auto d-flex align-items-center gap-3">
+        <button class="admin-bell" type="button" data-toast="No new notifications" aria-label="Notifications"><i class="bi bi-bell"></i><span class="dot"></span></button>
+        <span class="admin-vr"></span>
+        <div class="dropdown"><a href="#" class="d-flex align-items-center gap-2 text-dark" data-bs-toggle="dropdown"><span class="adm-av light">A</span><span class="d-none d-sm-block lh-1"><span class="small fw-medium d-block">Admin</span><span class="text-muted" style="font-size:.66rem">Super admin</span></span><i class="bi bi-chevron-down small"></i></a>
+          <ul class="dropdown-menu dropdown-menu-end"><li><a class="dropdown-item text-danger" href="admin-login.html"><i class="bi bi-box-arrow-right text-danger"></i>Log out</a></li></ul></div>
+      </div>
+    </header>
+    <div class="admin-content">
+<div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-4">
+  <div><h1 class="h3 mb-1">Orders</h1><div class="text-muted small">890 orders this month</div></div>
+  <div class="d-flex gap-2 align-items-center"></div>
+</div><div class="row g-3 mb-4"><div class="col-6 col-xl-3"><div class="stat-card"><div class="d-flex justify-content-between align-items-start mb-3"><span class="tile t-green"><i class="bi bi-check2"></i></span></div><div class="stat-num">612</div><div class="small text-muted">Delivered</div></div></div><div class="col-6 col-xl-3"><div class="stat-card"><div class="d-flex justify-content-between align-items-start mb-3"><span class="tile t-blue"><i class="bi bi-box-seam"></i></span></div><div class="stat-num">148</div><div class="small text-muted">Shipped</div></div></div><div class="col-6 col-xl-3"><div class="stat-card"><div class="d-flex justify-content-between align-items-start mb-3"><span class="tile t-amber"><i class="bi bi-clock"></i></span></div><div class="stat-num">96</div><div class="small text-muted">Processing</div></div></div><div class="col-6 col-xl-3"><div class="stat-card"><div class="d-flex justify-content-between align-items-start mb-3"><span class="tile t-red"><i class="bi bi-slash-circle"></i></span></div><div class="stat-num">34</div><div class="small text-muted">Cancelled</div></div></div></div><div class="admin-card mb-4" data-filter-list>
+<div class="toolbar"><div class="d-flex gap-2 flex-wrap"><div class="tb-search"><i class="bi bi-search"></i><input class="form-control" type="search" placeholder="Search orders..." data-filter-search></div></div><div class="d-flex gap-2 flex-wrap"><select class="form-select w-auto" data-filter-key="status"><option value="">All statuses</option><option>Delivered</option><option>Shipped</option><option>Processing</option><option>Cancelled</option></select><select class="form-select w-auto"><option>This month</option><option>Last month</option></select></div></div>
+<div class="table-responsive"><table class="table admin-table align-middle mb-0"><thead><tr><th>Order</th><th>Customer</th><th>Items</th><th>Date</th><th>Total</th><th>Status</th><th class="text-end">Actions</th></tr></thead><tbody><tr class="filter-item" data-label="#1042" data-status="Shipped"><td><span class="fw-medium">#1042</span></td><td><div class="ent"><span class="avatar-i" style="background:#FAECE7;color:#D85A30">SJ</span><span class="nm">Sara Jawabreh</span></div></td><td>Cat food, toy</td><td>Sep 18, 2026</td><td>18 JD</td><td><span class="pill sp pill-blue">Shipped</span></td><td class="text-end text-nowrap"><a class="act-btn" href="order-details.html?order=%231042&customer=Sara%20Jawabreh&items=Cat%20food%2C%20toy&date=Sep%2018%2C%202026&total=18%20JD&status=Shipped" aria-label="View"><i class="bi bi-eye"></i></a></td></tr><tr class="filter-item" data-label="#1041" data-status="Processing"><td><span class="fw-medium">#1041</span></td><td><div class="ent"><span class="avatar-i" style="background:#E1F5EE;color:#0F6E56">OK</span><span class="nm">Omar Khaled</span></div></td><td>Dog walking collar</td><td>Sep 17, 2026</td><td>8 JD</td><td><span class="pill sp pill-amber">Processing</span></td><td class="text-end text-nowrap"><a class="act-btn" href="order-details.html?order=%231041&customer=Omar%20Khaled&items=Dog%20walking%20collar&date=Sep%2017%2C%202026&total=8%20JD&status=Processing" aria-label="View"><i class="bi bi-eye"></i></a></td></tr><tr class="filter-item" data-label="#1040" data-status="Delivered"><td><span class="fw-medium">#1040</span></td><td><div class="ent"><span class="avatar-i" style="background:#FCE7F0;color:#B33670">LO</span><span class="nm">Lina Odeh</span></div></td><td>Vitamin supplement, bird cage</td><td>Sep 15, 2026</td><td>32 JD</td><td><span class="pill sp pill-green">Delivered</span></td><td class="text-end text-nowrap"><a class="act-btn" href="order-details.html?order=%231040&customer=Lina%20Odeh&items=Vitamin%20supplement%2C%20bird%20cage&date=Sep%2015%2C%202026&total=32%20JD&status=Delivered" aria-label="View"><i class="bi bi-eye"></i></a></td></tr><tr class="filter-item" data-label="#1039" data-status="Delivered"><td><span class="fw-medium">#1039</span></td><td><div class="ent"><span class="avatar-i" style="background:#E6F1FB;color:#185FA5">SJ</span><span class="nm">Sara Jawabreh</span></div></td><td>Dog shampoo</td><td>Sep 10, 2026</td><td>9 JD</td><td><span class="pill sp pill-green">Delivered</span></td><td class="text-end text-nowrap"><a class="act-btn" href="order-details.html?order=%231039&customer=Sara%20Jawabreh&items=Dog%20shampoo&date=Sep%2010%2C%202026&total=9%20JD&status=Delivered" aria-label="View"><i class="bi bi-eye"></i></a></td></tr><tr class="filter-item" data-label="#1038" data-status="Cancelled"><td><span class="fw-medium">#1038</span></td><td><div class="ent"><span class="avatar-i" style="background:#EEEDFE;color:#5B4FC9">ZH</span><span class="nm">Ziad Haddad</span></div></td><td>Cat food x2</td><td>Sep 8, 2026</td><td>24 JD</td><td><span class="pill sp pill-red">Cancelled</span></td><td class="text-end text-nowrap"><a class="act-btn" href="order-details.html?order=%231038&customer=Ziad%20Haddad&items=Cat%20food%20x2&date=Sep%208%2C%202026&total=24%20JD&status=Cancelled" aria-label="View"><i class="bi bi-eye"></i></a></td></tr><tr class="filter-item" data-label="#1037" data-status="Delivered"><td><span class="fw-medium">#1037</span></td><td><div class="ent"><span class="avatar-i" style="background:#FAEEDA;color:#B7791F">HM</span><span class="nm">Hala Masri</span></div></td><td>Interactive cat ball</td><td>Sep 5, 2026</td><td>6 JD</td><td><span class="pill sp pill-green">Delivered</span></td><td class="text-end text-nowrap"><a class="act-btn" href="order-details.html?order=%231037&customer=Hala%20Masri&items=Interactive%20cat%20ball&date=Sep%205%2C%202026&total=6%20JD&status=Delivered" aria-label="View"><i class="bi bi-eye"></i></a></td></tr></tbody></table></div>
+<div class="no-results d-none text-center py-4 text-muted small">Nothing found.</div>
+<div class="tfoot-bar"><span>Showing <span data-count>6</span> of 890 orders</span><div class="pg"><button aria-label="Previous"><i class="bi bi-chevron-left"></i></button><button class="on">1</button><button class="">2</button><button class="">3</button><button aria-label="Next"><i class="bi bi-chevron-right"></i></button></div></div></div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm"><div class="modal-content" style="border-radius:1rem">
+    <div class="modal-body text-center p-4">
+      <div class="confirm-circle mb-3" style="background:#FBEAEA;color:#B33636;width:64px;height:64px;font-size:1.8rem"><i class="bi bi-trash"></i></div>
+      <h6>Delete <span id="delName">this item</span>?</h6>
+      <p class="small text-muted">This action cannot be undone.</p>
+      <div class="d-flex gap-2"><button class="btn btn-outline-secondary flex-fill" data-bs-dismiss="modal">Cancel</button><button class="btn btn-danger flex-fill" id="deleteYes">Delete</button></div>
+    </div></div></div></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>

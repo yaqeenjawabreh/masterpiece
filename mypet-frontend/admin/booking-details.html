@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Booking details - Admin | mypet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="../assets/css/mypet.css" rel="stylesheet">
+</head>
+<body class="admin-body">
+<div class="admin-shell">
+  <aside class="admin-side">
+    <a class="mp-brand" href="dashboard.html"><span class="mp-logo"><svg class="paw" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><ellipse cx="6.3" cy="10.2" rx="2" ry="2.6"/><ellipse cx="10.3" cy="5.9" rx="2" ry="2.7"/><ellipse cx="15.5" cy="5.9" rx="2" ry="2.7"/><ellipse cx="19" cy="10.2" rx="2" ry="2.6"/><path d="M12.4 11c-3.2 0-6.2 3.2-6.2 6 0 2 1.6 3.100 3.300 3.100 1.200 0 1.900-.6 2.900-.6s1.700.6 2.900.6c1.700 0 3.300-1.100 3.300-3.100 0-2.800-3-6-6.200-6z"/></svg></span>mypet</a>
+    <nav class="admin-nav"><a href="dashboard.html" class=""><i class="bi bi-grid-1x2"></i>Dashboard</a><div class="nav-label">SERVICES</div><a href="products.html" class=""><i class="bi bi-bag"></i>Products</a><a href="clinics.html" class=""><i class="bi bi-heart-pulse"></i>Clinics</a><a href="daycare.html" class=""><i class="bi bi-house-door"></i>Day care</a><a href="training.html" class=""><i class="bi bi-mortarboard"></i>Training</a><a href="walking.html" class=""><i class="bi bi-person-walking"></i>Walking</a><a href="adoption.html" class=""><i class="bi bi-heart"></i>Adoption</a><a href="blog.html" class=""><i class="bi bi-file-earmark-text"></i>Blog</a><div class="nav-label">MANAGEMENT</div><a href="bookings.html" class="active"><i class="bi bi-calendar-event"></i>Bookings</a><a href="orders.html" class=""><i class="bi bi-box-seam"></i>Orders</a><a href="users.html" class=""><i class="bi bi-people"></i>Users</a><a href="schedules.html" class=""><i class="bi bi-clock"></i>Schedules</a></nav>
+    <div class="admin-foot"><div class="d-flex align-items-center gap-2 mb-3"><span class="adm-av">A</span><div><div class="small text-white">Admin</div><div style="font-size:.68rem">admin@mypet.com</div></div></div>
+      <a href="admin-login.html" class="logout"><i class="bi bi-box-arrow-right"></i>Log out</a></div>
+  </aside>
+  <div class="admin-main">
+    <header class="admin-top">
+      <button class="btn btn-outline-secondary btn-sm d-lg-none" id="adminSideToggle" aria-label="Menu"><i class="bi bi-list"></i></button>
+      <label class="admin-search"><i class="bi bi-search"></i><input type="search" placeholder="Search users, bookings, products..."></label>
+      <div class="ms-auto d-flex align-items-center gap-3">
+        <button class="admin-bell" type="button" data-toast="No new notifications" aria-label="Notifications"><i class="bi bi-bell"></i><span class="dot"></span></button>
+        <span class="admin-vr"></span>
+        <div class="dropdown"><a href="#" class="d-flex align-items-center gap-2 text-dark" data-bs-toggle="dropdown"><span class="adm-av light">A</span><span class="d-none d-sm-block lh-1"><span class="small fw-medium d-block">Admin</span><span class="text-muted" style="font-size:.66rem">Super admin</span></span><i class="bi bi-chevron-down small"></i></a>
+          <ul class="dropdown-menu dropdown-menu-end"><li><a class="dropdown-item text-danger" href="admin-login.html"><i class="bi bi-box-arrow-right text-danger"></i>Log out</a></li></ul></div>
+      </div>
+    </header>
+    <div class="admin-content">
+<a href="bookings.html" class="small text-muted d-inline-block mb-2"><i class="bi bi-arrow-left me-1"></i>Back to bookings</a><div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-4">
+  <div><h1 class="h3 mb-1">Booking details</h1><div class="text-muted small">Review the booking and update its status.</div></div>
+  <div class="d-flex gap-2 align-items-center"></div>
+</div>
+<div class="row g-4"><div class="col-lg-8">
+<div class="admin-card mb-3 "><div class="ac-body"><div class="fw-semibold mb-1">Booking information</div><div class="kv"><span>Service</span><strong class="fw-medium text-end"><span data-q="service">Clinic</span></strong></div><div class="kv"><span>Provider</span><strong class="fw-medium text-end"><span data-q="provider">Gold Veterinary Clinic</span></strong></div><div class="kv"><span>Date &amp; time</span><strong class="fw-medium text-end"><span data-q="date">Sep 25 · 11:30 AM</span></strong></div><div class="kv"><span>Pet</span><strong class="fw-medium text-end">Mimi (Cat)</strong></div><div class="kv"><span>Notes</span><strong class="fw-medium text-end">Routine checkup</strong></div><div class="kv"><span>Payment</span><strong class="fw-medium text-end">Pay at the provider</strong></div><div class="kv"><span>Status</span><strong class="fw-medium text-end"><span class="pill status-pill sp pill-green" data-q="status">Confirmed</span></strong></div></div></div>
+<div class="admin-card mb-3 "><div class="ac-body"><div class="fw-semibold mb-1">Customer</div><div class="d-flex align-items-center gap-3 mb-3"><span class="avatar-i" style="width:44px;height:44px;background:#FAECE7;color:#D85A30">SJ</span><div><div class="fw-semibold" data-q="customer">Sara Jawabreh</div><div class="small text-muted" data-q="email">sara@example.com</div></div></div><div class="kv"><span>Phone</span><strong class="fw-medium text-end">+962 79 XXX XXXX</strong></div><div class="kv"><span>City</span><strong class="fw-medium text-end">Amman</strong></div><div class="kv"><span>Total bookings</span><strong class="fw-medium text-end">3</strong></div></div></div>
+</div><div class="col-lg-4"><div class="admin-card mb-3 "><div class="ac-body"><div class="fw-semibold mb-1">Actions</div><div class="text-muted small mb-2">Changes are saved to the booking.</div><div class="d-grid gap-2 mt-3">
+<button class="btn btn-primary" type="button" data-set-status="Confirmed" data-msg="Booking confirmed"><i class="bi bi-check2-circle me-1"></i>Confirm booking</button>
+<button class="btn btn-outline-secondary" type="button" data-set-status="Pending" data-msg="Marked as pending">Mark as pending</button>
+<button class="btn btn-outline-danger" type="button" data-set-status="Cancelled" data-msg="Booking cancelled"><i class="bi bi-x-circle me-1"></i>Cancel booking</button></div></div></div>
+</div></div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm"><div class="modal-content" style="border-radius:1rem">
+    <div class="modal-body text-center p-4">
+      <div class="confirm-circle mb-3" style="background:#FBEAEA;color:#B33636;width:64px;height:64px;font-size:1.8rem"><i class="bi bi-trash"></i></div>
+      <h6>Delete <span id="delName">this item</span>?</h6>
+      <p class="small text-muted">This action cannot be undone.</p>
+      <div class="d-flex gap-2"><button class="btn btn-outline-secondary flex-fill" data-bs-dismiss="modal">Cancel</button><button class="btn btn-danger flex-fill" id="deleteYes">Delete</button></div>
+    </div></div></div></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>

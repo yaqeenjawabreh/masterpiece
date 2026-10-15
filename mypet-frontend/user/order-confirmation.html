@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Order confirmed | mypet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="../assets/css/mypet.css" rel="stylesheet">
+</head>
+<body class="user-body">
+<nav class="navbar navbar-expand-lg mp-navbar sticky-top">
+  <div class="container">
+    <a class="navbar-brand mp-brand" href="home.html"><span class="mp-logo"><svg class="paw" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><ellipse cx="6.3" cy="10.2" rx="2" ry="2.6"/><ellipse cx="10.3" cy="5.9" rx="2" ry="2.7"/><ellipse cx="15.5" cy="5.9" rx="2" ry="2.7"/><ellipse cx="19" cy="10.2" rx="2" ry="2.6"/><path d="M12.4 11c-3.2 0-6.2 3.2-6.2 6 0 2 1.6 3.100 3.300 3.100 1.200 0 1.900-.6 2.900-.6s1.700.6 2.900.6c1.700 0 3.300-1.100 3.300-3.100 0-2.800-3-6-6.200-6z"/></svg></span>mypet</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-list fs-2"></i></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0"><li class="nav-item"><a class="nav-link" href="home.html">Home</a></li><li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li><li class="nav-item"><a class="nav-link" href="clinics.html">Clinics</a></li><li class="nav-item"><a class="nav-link" href="daycare.html">Day Care</a></li><li class="nav-item"><a class="nav-link" href="training.html">Training</a></li><li class="nav-item"><a class="nav-link" href="walking.html">Walking</a></li><li class="nav-item"><a class="nav-link" href="adoption.html">Adoption</a></li><li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li></ul>
+      <div class="d-flex align-items-center gap-3"><a class="mp-icon-btn" href="cart.html" aria-label="Cart"><i class="bi bi-cart3"></i><span class="mp-badge" data-cart-badge>3</span></a>
+        <div class="dropdown">
+          <a class="mp-icon-btn" href="#" data-bs-toggle="dropdown" aria-label="Notifications"><i class="bi bi-bell"></i><span class="mp-badge">2</span></a>
+          <ul class="dropdown-menu dropdown-menu-end p-2" style="min-width:260px">
+            <li class="small fw-semibold px-2 pb-1">Notifications</li>
+            <li><a class="dropdown-item small" href="my-bookings.html"><i class="bi bi-calendar-check"></i>Your clinic appointment is tomorrow</a></li>
+            <li><a class="dropdown-item small" href="my-orders.html"><i class="bi bi-box-seam"></i>Order #1042 has shipped</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="mp-avatar" data-bs-toggle="dropdown" aria-label="Account menu">SJ</a>
+          <ul class="dropdown-menu dropdown-menu-end" style="min-width:210px">
+            <li class="px-3 py-2 border-bottom"><div class="fw-semibold small">Sara Jawabreh</div><div class="text-muted" style="font-size:.72rem">sara@example.com</div></li>
+            <li><a class="dropdown-item" href="account.html"><i class="bi bi-person"></i>My Account</a></li>
+            <li><a class="dropdown-item" href="my-bookings.html"><i class="bi bi-calendar-event"></i>My Bookings</a></li>
+            <li><a class="dropdown-item" href="my-orders.html"><i class="bi bi-box-seam"></i>My Orders</a></li>
+            <li><a class="dropdown-item" href="my-pets.html"><svg class="paw" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><ellipse cx="6.3" cy="10.2" rx="2" ry="2.6"/><ellipse cx="10.3" cy="5.9" rx="2" ry="2.7"/><ellipse cx="15.5" cy="5.9" rx="2" ry="2.7"/><ellipse cx="19" cy="10.2" rx="2" ry="2.6"/><path d="M12.4 11c-3.2 0-6.2 3.2-6.2 6 0 2 1.6 3.100 3.300 3.100 1.200 0 1.900-.6 2.900-.6s1.700.6 2.900.6c1.700 0 3.300-1.100 3.300-3.100 0-2.800-3-6-6.200-6z"/></svg>My Pets</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-danger" href="signin.html"><i class="bi bi-box-arrow-right text-danger"></i>Log out</a></li>
+          </ul>
+        </div></div>
+    </div>
+  </div>
+</nav>
+<main>
+<div class="container py-5 text-center" style="max-width:640px">
+  <div class="checkout-steps mb-3"><span class="on">1. Cart</span> &rarr; <span class="on">2. Checkout</span> &rarr; <span class="on">3. Confirmation</span></div>
+  <div class="confirm-circle my-3"><i class="bi bi-check-lg"></i></div>
+  <h1 class="h3">Order placed successfully!</h1>
+  <p class="text-muted">Thanks <span data-q="customer">Sara</span>, your order has been confirmed and is being prepared.</p>
+  <div class="summary-box d-flex justify-content-around text-center my-4">
+    <div><div class="small text-muted">Order number</div><div class="fw-semibold" data-q="order">#1044</div></div>
+    <div><div class="small text-muted">Total</div><div class="fw-semibold price"><span data-q="total">42</span> JD</div></div>
+    <div><div class="small text-muted">Estimated delivery</div><div class="fw-semibold">2-3 days</div></div>
+  </div>
+  <a class="btn btn-primary" href="my-orders.html">Track Order</a> <a class="btn btn-outline-secondary ms-2" href="shop.html">Continue Shopping</a>
+</div>
+</main>
+<footer class="mp-footer">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-md-4 brand-col">
+        <a class="mp-brand" href="home.html"><span class="mp-logo"><svg class="paw" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><ellipse cx="6.3" cy="10.2" rx="2" ry="2.6"/><ellipse cx="10.3" cy="5.9" rx="2" ry="2.7"/><ellipse cx="15.5" cy="5.9" rx="2" ry="2.7"/><ellipse cx="19" cy="10.2" rx="2" ry="2.6"/><path d="M12.4 11c-3.2 0-6.2 3.2-6.2 6 0 2 1.6 3.100 3.300 3.100 1.200 0 1.900-.6 2.900-.6s1.700.6 2.900.6c1.700 0 3.300-1.100 3.300-3.100 0-2.800-3-6-6.200-6z"/></svg></span>mypet</a>
+        <p class="mb-0">Everything your pet needs, all in one place.</p>
+      </div>
+      <div class="col-6 col-md-2 offset-md-1"><h6>Services</h6><ul>
+        <li><a href="shop.html">Shop</a></li><li><a href="clinics.html">Clinics</a></li><li><a href="daycare.html">Day Care</a></li><li><a href="training.html">Training</a></li><li><a href="walking.html">Walking</a></li><li><a href="adoption.html">Adoption</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+      <div class="col-6 col-md-2"><h6>My account</h6><ul>
+        <li><a href="account.html">My account</a></li><li><a href="my-bookings.html">My bookings</a></li><li><a href="my-orders.html">My orders</a></li><li><a href="my-pets.html">My pets</a></li></ul></div>
+      <div class="col-md-3"><h6>Contact us</h6><ul class="contact">
+        <li><i class="bi bi-envelope"></i>hello@mypet.com</li><li><i class="bi bi-telephone"></i>+962 6 XXX XXXX</li><li><i class="bi bi-geo-alt"></i>Amman, Jordan</li></ul></div>
+    </div>
+    <div class="mp-footer-bottom"><span>&copy; <span data-year>2026</span> mypet. All rights reserved.</span><span><a href="#">Privacy policy</a><a href="#">Terms of service</a></span></div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>
